@@ -1,6 +1,4 @@
-# Лабораторная работа №7
-
-## Задание
+# Http Server
 
 Реализовать **suggest** сервис, обрабатывающий **POST** запрос по следующему **URI**: `/v1/api/suggest`.</br>
 Клиент отправляет POST запрос следующего формата:
@@ -63,16 +61,3 @@
 
 Поле `cost` определяет значение поля `position`: чем больше `cost` тем меньше значение `position`.</br>
 (чем ниже стоимость, тем выше вариант)
-
-## Рекомендации
-
-* для реализации HTTP сервера используйте готовые библиотеки
-* в пакетном менеджере hunter есть несколько [библиотек](https://hunter.readthedocs.io/en/latest/packages/networking.html) для работы с сетью. Например, [Boost.Beast](https://hunter.readthedocs.io/en/latest/packages/pkg/Beast.html#pkg-beast)
-* у хороших библиотек есть наглядные примеры работы с этими библиотеками. Например, простой [синхнорнный http сервер на основе Boost.Beast](https://github.com/boostorg/beast/blob/develop/example/http/server/sync/http_server_sync.cpp)
-* тестирование сервера выполнить с помощью утилиты curl (документацию с примерами можно найти [здесь](https://ec.haxx.se/cmdline/cmdline-options)).
-
-## Links
-
-- [Boost.Beast](https://github.com/boostorg/beast)
-- [Vinnie Falco: Boost.Beast](https://vinniefalco.github.io/beast/)
-- [POST](https://ru.wikipedia.org/wiki/POST_(HTTP))
